@@ -781,7 +781,7 @@ p {                               /* Styles for paragraph elements */
 /* Tablet Styles (screens smaller than 900px) */
 @media screen and (max-width: 900px) {  /* Applies only when screen width is 900px or less */
   h1 {
-    font-size: 11vw;  /* Smaller title for tablets */  /* Reduces h1 size from 72px to 48px */
+    font-size: 14vw;  /* Smaller title for tablets */  /* Reduces h1 size from 72px to 48px */
   }
   
   nav ul {
