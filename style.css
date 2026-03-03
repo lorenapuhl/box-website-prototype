@@ -15,10 +15,10 @@
   --header-color: rgba(255, 255, 255, 1); 
   
   /* Dark cement grey for cards/banners */
-  --banner-color: rgba(40, 40, 40, 0.95); 
+  --banner-color: rgba(255, 255, 255, 1); 
   
   /* White text for banners */
-  --banner-font: rgba(255, 255, 255, 1); 
+  --banner-font: rgba(40, 40, 40, 0.95); 
   
   /* Font color in cta buttons and hamburger manu bars */
   --contrast: black;

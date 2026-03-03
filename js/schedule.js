@@ -95,7 +95,7 @@ async function initSchedule() {
                 <button
                   class="btn-reserve"
                   ${isFull ? 'disabled' : ''}>
-                  ${isFull ? 'Completo' : 'Reservar'}
+                  ${isFull ? 'Full' : 'Book'}
                 </button>
             </div>
         `;
