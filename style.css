@@ -338,7 +338,7 @@ p {                               /* Styles for paragraph elements */
   font-weight: 500;
   cursor: pointer;
   font-size: 0.85rem; /* Slightly smaller base font */
-  min-width: 80px;       /* This ensures "Full" is as wide as "Book" */
+  min-width: 70px;       /* This ensures "Full" is as wide as "Book" */
   text-align: center;    /* Keeps the text centered inside that fixed width */
   display: inline-block; /* Ensures the width is respected properly */
 }
@@ -441,7 +441,7 @@ p {                               /* Styles for paragraph elements */
 .testimonial-card {
   flex: 0 0 75%;             /* Card takes 85% of screen (shows "peek" of next) */
   scroll-snap-align: center; /* Ensures card snaps to middle of screen */
-  padding: 2.5em 1.5em;      /* Relative padding that grows with text */
+  padding: 2.5em 1.1em;      /* Relative padding that grows with text */
   border-radius: 0;          /* Sharp corners for the boutique look */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   border: 1px solid rgba(0, 0, 0, 0.05);
