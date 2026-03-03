@@ -839,7 +839,7 @@ p {                               /* Styles for paragraph elements */
 /* Small Mobile Styles (screens smaller than 400px) */
 @media screen and (max-width: 400px) {  /* Applies only on very small screens */
   h1 {
-    font-size: 10vw;  /* Smallest size for very small phones */  /* Further reduces h1 to 28px */
+    font-size: 18vw;  /* Smallest size for very small phones */  /* Further reduces h1 to 28px */
   }
   
   nav ul {
