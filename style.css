@@ -545,23 +545,29 @@ p {                               /* Styles for paragraph elements */
 }
 
 /* Button Styling */
+
 .cta-btn {
   background: var(--header-color);
   color: var(--contrast); 
   border: none;
   padding: 0.8em 2.5em;
-  border-radius: 6px;
-  font-family: inherit;
-  font-size: 0.85em;
+  /*border-radius: 6px;*/
+  border-radius: 0px;
+  /*font-family: inherit;*/
+  font-family: 'Bebas Neue', sans-serif;
+  /*font-size: 0.85em;*/
+  font-size: 1.4rem;
   font-weight: 500;
   transition: opacity 0.3s ease;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   cursor: pointer;
   transition: opacity 0.3s;
   margin-top: 2em;  /*adds space above*/
   align-self: center; /* keeps button centered */
   min-width: 160px  /*ensures button does't get too small on small screens */
 }
+
+
 
 .cta-btn:active{
   transform: translateY(0); /* "Pressed" look when clicking */
