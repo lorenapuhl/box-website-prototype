@@ -338,6 +338,9 @@ p {                               /* Styles for paragraph elements */
   font-weight: 500;
   cursor: pointer;
   font-size: 0.85rem; /* Slightly smaller base font */
+  min-width: 80px;       /* This ensures "Full" is as wide as "Book" */
+  text-align: center;    /* Keeps the text centered inside that fixed width */
+  display: inline-block; /* Ensures the width is respected properly */
 }
 
 /* This targets ONLY buttons that have the 'disabled' attribute */
