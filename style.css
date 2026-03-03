@@ -188,15 +188,16 @@ p {                               /* Styles for paragraph elements */
    ======================================== */
 /* Main schedule section in index.html*/
 .schedule-section {
-  max-width: 75%;
-  margin: 0 auto
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 95%;
 }
 
 /* 'Horarios' header*/
 .schedule-section h2 {
   margin-bottom: 2em;
   color: var(--font-color);
-  margin-top: 5em
+  margin-top: 5em;
 }
 /*Container for day "Tabs" (the buttons labeled DOM 22, LUN 23, MAR 24, etc.) in index.html*/
 .day-selector {
