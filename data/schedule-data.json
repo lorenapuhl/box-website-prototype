@@ -1,30 +1,30 @@
 {
   "Mon": [
-    { "name": "Heavy Bag Fundamentals", "bTime": "07:00", "eTime": "08:00", "instructor": "Andrea Galván", "status": "green" },
-    { "name": "Boxing HIIT & Cardio", "bTime": "18:30", "eTime": "19:30", "instructor": "Marco Polo", "status": "red" }
+    { "name": "Heavy Bag Fundamentals", "bTime": "07:00", "eTime": "08:00", "instructor": "Camille Bernard", "status": "green" },
+    { "name": "Boxing HIIT & Cardio", "bTime": "18:30", "eTime": "19:30", "instructor": "Luca Moretti", "status": "red" }
   ],
   "Tue": [
-    { "name": "Technical Sparring", "bTime": "09:00", "eTime": "10:00", "instructor": "Lucia Sanz", "status": "green" },
-    { "name": "Power Punches & Upper Body", "bTime": "19:00", "eTime": "20:00", "instructor": "Clara Ruiz", "status": "orange" }
+    { "name": "Technical Sparring", "bTime": "09:00", "eTime": "10:00", "instructor": "Léa Dubois", "status": "green" },
+    { "name": "Power Punches & Upper Body", "bTime": "19:00", "eTime": "20:00", "instructor": "Clara Müller", "status": "orange" }
   ],
   "Wed": [
-    { "name": "Speed & Footwork", "bTime": "10:30", "eTime": "11:30", "instructor": "Elena Sol", "status": "green" },
-    { "name": "Killer Core for Boxers", "bTime": "17:00", "eTime": "18:00", "instructor": "Ricardo Paz", "status": "red" }
+    { "name": "Speed & Footwork", "bTime": "10:30", "eTime": "11:30", "instructor": "Elena Rossi", "status": "green" },
+    { "name": "Killer Core for Boxers", "bTime": "17:00", "eTime": "18:00", "instructor": "Julien Lefebvre", "status": "red" }
   ],
   "Thu": [
-    { "name": "Counter-Punching Drills", "bTime": "08:00", "eTime": "09:00", "instructor": "Lucia Sanz", "status": "green" },
-    { "name": "Full Body Knockout", "bTime": "20:00", "eTime": "21:00", "instructor": "Sofi Luna", "status": "green" }
+    { "name": "Counter-Punching Drills", "bTime": "08:00", "eTime": "09:00", "instructor": "Léa Dubois", "status": "green" },
+    { "name": "Full Body Knockout", "bTime": "20:00", "eTime": "21:00", "instructor": "Sophie Laurent", "status": "green" }
   ],
   "Fri": [
-    { "name": "Endurance Rounds", "bTime": "07:00", "eTime": "08:00", "instructor": "Andrea Galván", "status": "orange" },
-    { "name": "Friday Fight Night (Conditioning)", "bTime": "18:00", "eTime": "19:00", "instructor": "Marco Polo", "status": "green" }
+    { "name": "Endurance Rounds", "bTime": "07:00", "eTime": "08:00", "instructor": "Camille Bernard", "status": "orange" },
+    { "name": "Friday Fight Night (Conditioning)", "bTime": "18:00", "eTime": "19:00", "instructor": "Luca Moretti", "status": "green" }
   ],
   "Sat": [
-    { "name": "Open Mat & Pad Work", "bTime": "10:00", "eTime": "11:00", "instructor": "Clara Ruiz", "status": "red" },
-    { "name": "Defense & Head Movement Workshop", "bTime": "11:30", "eTime": "13:00", "instructor": "Elena Sol", "status": "green" }
+    { "name": "Open Mat & Pad Work", "bTime": "10:00", "eTime": "11:00", "instructor": "Clara Müller", "status": "red" },
+    { "name": "Defense & Head Movement Workshop", "bTime": "11:30", "eTime": "13:00", "instructor": "Elena Rossi", "status": "green" }
   ],
   "Sun": [
-    { "name": "Recovery & Stretching", "bTime": "09:30", "eTime": "10:30", "instructor": "Ricardo Paz", "status": "green" },
-    { "name": "Shadow Boxing & Mobility", "bTime": "11:00", "eTime": "12:00", "instructor": "Sofi Luna", "status": "orange" }
+    { "name": "Recovery & Stretching", "bTime": "09:30", "eTime": "10:30", "instructor": "Julien Lefebvre", "status": "green" },
+    { "name": "Shadow Boxing & Mobility", "bTime": "11:00", "eTime": "12:00", "instructor": "Sophie Laurent", "status": "orange" }
   ]
 }
