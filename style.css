@@ -333,7 +333,7 @@ p {                               /* Styles for paragraph elements */
   color: var(--contrast); 
   border: none;
   padding: 0.6em 1.2em;
-  border-radius: 6px;
+  border-radius: 0px;
   font-family: inherit;
   font-weight: 500;
   cursor: pointer;
@@ -536,12 +536,12 @@ p {                               /* Styles for paragraph elements */
 
 .pricing-card h3 {
   color: var(--font-color);
-  font-size: 1.2em;
+  font-size: 2em;
 }
 
 .pricing-card p {
   color: var(--font-color);
-  font-size: 1.2em;
+  font-size: 1em;
   margin-bottom: 0.5em;
 }
 
@@ -653,7 +653,7 @@ p {                               /* Styles for paragraph elements */
   color: var(--banner-color); 
   padding: 10px 20px;      /* Space inside button: 10px top/bottom, 20px left/right */
   text-decoration: none;    /* Removes underline from link */
-  border-radius: 50px;     /* Makes button edges super round for pill shape (use 5px for slightly round, 0 for square) */
+  border-radius: 0px;     /* Makes button edges super round for pill shape (use 5px for slightly round, 0 for square) */
   font-weight: 600;        /* Makes text semi-bold (600 out of 900) */
   font-size: 0.85rem;      /* Sets text size smaller (about 13-14px) */
   text-transform: uppercase; /* Transforms text to ALL CAPS */
@@ -711,7 +711,7 @@ p {                               /* Styles for paragraph elements */
   cursor: pointer;                /* Changes cursor to pointer/hand when hovering */
   padding: 12px;                  /* Adds 12px padding inside button on all sides */
   background-color: var(--font-color); ;  /* Sets background to black with 90% opacity */
-  border-radius: 5px;             /* Rounds the corners by 5 pixels */
+  border-radius: 0px;             /* Rounds the corners by 5 pixels */
   flex-direction: column;         /* Stacks child elements (bars) vertically */
   gap: 5px;                       /* Adds 5px space between each bar */
   display: none;                  /* Hidden by default (shown only on mobile) */
