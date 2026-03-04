@@ -304,7 +304,7 @@ p {                               /* Styles for paragraph elements */
   gap: 0.8em; /* Space between the green dot and the button */
   /*width: 8em;  Fixed width ensures all buttons line up vertically */
   flex-shrink: 0; /* Prevents the button area from being squeezed */
-  width: 9em;
+  min-width: auto;
   margin-left:1rem;
   width: auto;
 }
@@ -360,7 +360,7 @@ p {                               /* Styles for paragraph elements */
   transform: translateY(0); /* "Pressed" look when clicking */
 }
 
-/* Targets screens wider than 900px */
+/* SCREENS WIDER THAN 900px */
 @media (min-width: 900px) {
   .schedule-row {
     gap: 4rem;              /* Creates a consistent, elegant space between them */
@@ -374,11 +374,11 @@ p {                               /* Styles for paragraph elements */
 }
   .class-info {
     flex: 0 1 auto;         /* Prevents the text from taking up all empty space */
-    text-align: right;      /* Optional: aligns text toward the button for a premium look */
+    text-align: left;      /* Optional: aligns text toward the button for a premium look */
   }
 }
 
-/* Targets screens between 400px and 899px */
+/* SCREENS BETWEEN 400px and 899px */
 @media screen and (min-width: 400px) and (max-width: 899px) {
   .schedule-row {
     /* 1. Reset padding to match your standard look */
