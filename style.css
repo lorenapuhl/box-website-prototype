@@ -25,6 +25,9 @@
 
   /*box-shadow color. Choose black for darg backgounds and lighter black rgba(0, 0, 0, 0.08) for light bckgrounds*/
   --shadow-color: black;
+
+  /*border radius for menu and reserve buttons - use 6px for elegant and 0 px for brutal or 50px for pill shape*/
+  --radius: 0px;
 }
   
  /* ========================================
@@ -191,16 +194,15 @@ p {                               /* Styles for paragraph elements */
    ======================================== */
 /* Main schedule section in index.html*/
 .schedule-section {
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 95%;
+  max-width: 900px;
+  margin: 0 auto
 }
 
 /* 'Horarios' header*/
 .schedule-section h2 {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   color: var(--font-color);
-  margin-top: 5em;
+  margin-top: 5em
 }
 /*Container for day "Tabs" (the buttons labeled DOM 22, LUN 23, MAR 24, etc.) in index.html*/
 .day-selector {
@@ -256,6 +258,12 @@ p {                               /* Styles for paragraph elements */
   box-shadow: 0 4px 15px var(--shadow-color);
 }
 
+.schedule-row:hover {
+  transform: translateY(-2px); /* Subtle lift effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  opacity: 0.8;
+}
+
 /* Class-info container with class name, schedule and teacher*/
 .class-info {
   flex: 1; 
@@ -263,13 +271,11 @@ p {                               /* Styles for paragraph elements */
   padding-right: 20px; /* Space between text and the dot/button area */
   min-width: 0; /*Allows text to truncate or wrap instead of pushing the button */
   padding: 0;
-  text-align: left;
 }
 
 /* Class-info container with class name, schedule and teacher*/
 .class-info h3 {
-  font-size: 1.5vw;
-  /*font-size: clamp(0.9rem, 2.5vw, 1.1rem);*/
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
   margin: 0 0 5px 0;         /* Removes top margin, adds space below for the time */
   font-weight: 500;
   letter-spacing: 1.5px;
@@ -280,7 +286,6 @@ p {                               /* Styles for paragraph elements */
   font-size: clamp(0.75rem, 2vw, 0.85rem);  margin: 4px 0;              /* Tight spacing between the time line and instructor line */
   line-height: 1.4;
   margin: 0;
-  text-align: left
 }
 
 
@@ -340,14 +345,11 @@ p {                               /* Styles for paragraph elements */
   color: var(--contrast); 
   border: none;
   padding: 0.6em 1.2em;
-  border-radius: 0px;
+  border-radius: var(--radius);
   font-family: inherit;
-  font-weight: 500;
+  font-weight: bold;
   cursor: pointer;
   font-size: 0.85rem; /* Slightly smaller base font */
-  min-width: 70px;       /* This ensures "Full" is as wide as "Book" */
-  text-align: center;    /* Keeps the text centered inside that fixed width */
-  display: inline-block; /* Ensures the width is respected properly */
 }
 
 /* This targets ONLY buttons that have the 'disabled' attribute */
@@ -367,7 +369,7 @@ p {                               /* Styles for paragraph elements */
   transform: translateY(0); /* "Pressed" look when clicking */
 }
 
-/* SCREENS WIDER THAN 900px */
+/* Targets screens wider than 900px */
 @media (min-width: 900px) {
   .schedule-row {
     gap: 4rem;              /* Creates a consistent, elegant space between them */
@@ -381,11 +383,11 @@ p {                               /* Styles for paragraph elements */
 }
   .class-info {
     flex: 0 1 auto;         /* Prevents the text from taking up all empty space */
-    text-align: left;      /* Optional: aligns text toward the button for a premium look */
+    text-align: right;      /* Optional: aligns text toward the button for a premium look */
   }
 }
 
-/* SCREENS BETWEEN 400px and 899px */
+/* Targets screens between 400px and 899px */
 @media screen and (min-width: 400px) and (max-width: 899px) {
   .schedule-row {
     /* 1. Reset padding to match your standard look */
@@ -406,14 +408,6 @@ p {                               /* Styles for paragraph elements */
   }
 }
 
-@media screen and (max-width: 400px) {
-  .class-info h3 {
-    font-size: 1.1em;
-    text-align: left;
-  }
-
-}
-
 /* ========================================
    TESTIMONIALS
    ======================================== */
@@ -426,9 +420,8 @@ p {                               /* Styles for paragraph elements */
 }
 /* Header 'Nuestra comunidad opina */
 .testimonials h2 {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   color: var(--font-color);
-  margin-top: 1em;
 }
 
 /* --- THE SLIDER TRACK (The Horizontal Axis) --- */
@@ -457,7 +450,7 @@ p {                               /* Styles for paragraph elements */
 .testimonial-card {
   flex: 0 0 75%;             /* Card takes 85% of screen (shows "peek" of next) */
   scroll-snap-align: center; /* Ensures card snaps to middle of screen */
-  padding: 2.5em 1.1em;      /* Relative padding that grows with text */
+  padding: 2.5em 1.5em;      /* Relative padding that grows with text */
   border-radius: 0;          /* Sharp corners for the boutique look */
   box-shadow: 0 4px 15px var(--shadow-color);
   border: 1px solid rgba(0, 0, 0, 0.05);
@@ -516,7 +509,6 @@ p {                               /* Styles for paragraph elements */
 .pricing h2 {
   margin-bottom: 0.5em;
   color: var(--font-color);
-  margin-top: 1em;
 }
 
 /* --- THE SLIDER TRACK --- */
@@ -541,12 +533,13 @@ p {                               /* Styles for paragraph elements */
   scroll-snap-align: center;
   padding: 2em 1.5em;
   border-radius: 0; 
-  box-shadow: 0 4px 15px var(--shadow-color);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   border: 1px solid rgba(0, 0, 0, 0.05);
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-shadow: 0 4px 15px var(--shadow-color);
 }
 
 .pricing-card:hover {
@@ -556,46 +549,40 @@ p {                               /* Styles for paragraph elements */
 
 .pricing-card h3 {
   color: var(--font-color);
-  font-size: 2em;
+  font-size: 1.2 em;
 }
 
 .pricing-card p {
   color: var(--font-color);
-  font-size: 1em;
+  font-size: 1.2 em;
   margin-bottom: 0.5em;
 }
 
 /* Price Styling */
 .pricing-card .price {
-  font-size: 1.3em;
+  font-size: 1.5em;
   font-weight: bold;
   color: var(--font-color);
 }
 
 /* Button Styling */
-
 .cta-btn {
   background: var(--header-color);
   color: var(--contrast); 
   border: none;
   padding: 0.8em 2.5em;
-  /*border-radius: 6px;*/
-  border-radius: 0px;
-  /*font-family: inherit;*/
-  font-family: 'Bebas Neue', sans-serif;
-  /*font-size: 0.85em;*/
-  font-size: 1.4rem;
-  font-weight: 500;
+  border-radius: var(--radius);
+  font-family: inherit;
+  font-size: 0.85em;
+  font-weight: bold;
   transition: opacity 0.3s ease;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   cursor: pointer;
   transition: opacity 0.3s;
   margin-top: 2em;  /*adds space above*/
   align-self: center; /* keeps button centered */
   min-width: 160px  /*ensures button does't get too small on small screens */
 }
-
-
 
 .cta-btn:active{
   transform: translateY(0); /* "Pressed" look when clicking */
@@ -673,7 +660,7 @@ p {                               /* Styles for paragraph elements */
   color: var(--banner-color); 
   padding: 10px 20px;      /* Space inside button: 10px top/bottom, 20px left/right */
   text-decoration: none;    /* Removes underline from link */
-  border-radius: 0px;     /* Makes button edges super round for pill shape (use 5px for slightly round, 0 for square) */
+  border-radius: var(--radius);     /* Makes button edges super round for pill shape (use 5px for slightly round, 0 for square) */
   font-weight: 600;        /* Makes text semi-bold (600 out of 900) */
   font-size: 0.85rem;      /* Sets text size smaller (about 13-14px) */
   text-transform: uppercase; /* Transforms text to ALL CAPS */
@@ -731,7 +718,7 @@ p {                               /* Styles for paragraph elements */
   cursor: pointer;                /* Changes cursor to pointer/hand when hovering */
   padding: 12px;                  /* Adds 12px padding inside button on all sides */
   background-color: var(--font-color); ;  /* Sets background to black with 90% opacity */
-  border-radius: 0px;             /* Rounds the corners by 5 pixels */
+  border-radius: var(--radius);             /* Rounds the corners by 5 pixels */
   flex-direction: column;         /* Stacks child elements (bars) vertically */
   gap: 5px;                       /* Adds 5px space between each bar */
   display: none;                  /* Hidden by default (shown only on mobile) */
@@ -741,7 +728,7 @@ p {                               /* Styles for paragraph elements */
   filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.4));
 }
 
-.menu-button .bar {
+.menu-button .bar {               /* Styles for the three bars inside hamburger button (DESCENDANT SELECTOR) */
   width: 25px;                    /* Sets bar width to 25 pixels */
   height: 3px;                    /* Sets bar height to 3 pixels */
   background-color: var(--contrast) ;        /* Sets bar color to white */
@@ -808,18 +795,18 @@ p {                               /* Styles for paragraph elements */
 
 /* Tablet Styles (screens smaller than 900px) */
 @media screen and (max-width: 900px) {  /* Applies only when screen width is 900px or less */
-  .h1 {
-    font-size: 14vw;  /* Smaller title for tablets */  /* Reduces h1 size from 72px to 48px */
+  h1 {
+    font-size: 8vw;  /* Smaller title for tablets */  /* Reduces h1 size from 72px to 48px */
   }
   
-  .nav ul {
+  nav ul {
     gap: 15px;  /* Reduce space between nav items */  /* Reduces gap from 20px to 15px */
     padding: 15px;  /* Reduces padding from 20px to 15px */
     flex-wrap: wrap;  /* Allow nav items to wrap if needed */  /* Items move to next line if no space */
     justify-content: center;  /* Centers wrapped items */
   }
   
-  .p {
+  p {
     font-size: 16px;  /* Reduces paragraph font size */
     margin: 15px;  /* Reduces paragraph margin */
   }
@@ -827,61 +814,43 @@ p {                               /* Styles for paragraph elements */
 
 /* Mobile Styles (screens smaller than 600px) */
 @media screen and (max-width: 600px) {  /* Applies only when screen width is 600px or less */
-    .h1 {
-      font-size: 18vw;  /* Even smaller for mobile */  /* Further reduces h1 size to 36px */
-      letter-spacing: 2px;  /* Reduce letter spacing */  /* Reduces space between letters */
-      margin-top: 80px;  /* Adds margin above the h1 instead of padding */
-    }
-    
-    .nav ul {
-      gap: 10px;  /* Further reduces gap to 10px */
-      padding: 10px;  /* Further reduces padding to 10px */
-      flex-direction: column;  /* Stack nav items vertically */  /* Changes from row to column layout */
-      align-items: center;  /* Centers items vertically in column */
-    }
-    
-    .nav a {
-      display: block;  /* Make links full width for easier tapping */  /* Links take full width */
-      padding: 8px 0;  /* Adds vertical padding for easier tapping */
-      font-size: 16px;  /* Sets mobile link font size */
-    }
-    
-    .p {
-      font-size: 14px;  /* Further reduces paragraph font size */
-      margin: 10px;  /* Further reduces paragraph margin */
-    }
-
-    .h2 {
-    font-family: 'Bebas Neue', sans-serif;
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    letter-spacing: 2px;
+  h1 {
+    font-size: 10vw;  /* Even smaller for mobile */  /* Further reduces h1 size to 36px */
+    letter-spacing: 2px;  /* Reduce letter spacing */  /* Reduces space between letters */
+    margin-top: 80px;  /* Adds margin above the h1 instead of padding */
   }
+  
+  nav ul {
+    gap: 10px;  /* Further reduces gap to 10px */
+    padding: 10px;  /* Further reduces padding to 10px */
+    flex-direction: column;  /* Stack nav items vertically */  /* Changes from row to column layout */
+    align-items: center;  /* Centers items vertically in column */
+  }
+  
+  nav a {
+    display: block;  /* Make links full width for easier tapping */  /* Links take full width */
+    padding: 8px 0;  /* Adds vertical padding for easier tapping */
+    font-size: 16px;  /* Sets mobile link font size */
+  }
+  
+  p {
+    font-size: 14px;  /* Further reduces paragraph font size */
+    margin: 10px;  /* Further reduces paragraph margin */
+  }
+
 }
 
 /* Small Mobile Styles (screens smaller than 400px) */
 @media screen and (max-width: 400px) {  /* Applies only on very small screens */
-  .h1 {
-    font-size: 18vw;  /* Smallest size for very small phones */  /* Further reduces h1 to 28px */
+  h1 {
+    font-size: 20vw;  /* Smallest size for very small phones */  /* Further reduces h1 to 28px */
   }
   
-  .nav ul {
+  nav ul {
     gap: 5px;  /* Minimum gap between nav items */
   }
 
-  .h3 {
-    font-size: 2em;  /* Smallest size for very small phones */  /* Further reduces h1 to 28px */
-  }
-
-  .pricing-card h3 {
-  font-size: 1.5em;
-  }
-
-  .cta-btn {
-    padding: 0.4em 0.5em;
-  }
-
-  .pricing-card p {
-  font-size: 0.9em;
+  .btn-reserve {
+  font-weight: 500;
   }
 }
