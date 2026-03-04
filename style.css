@@ -406,6 +406,14 @@ p {                               /* Styles for paragraph elements */
   }
 }
 
+@media screen and (max-width: 400px) {
+  .class-info h3 {
+    font-size: 1em;
+    text-align: left;
+  }
+
+}
+
 /* ========================================
    TESTIMONIALS
    ======================================== */
