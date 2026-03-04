@@ -22,6 +22,9 @@
   
   /* Font color in cta buttons and hamburger manu bars */
   --contrast: black;
+
+  /*box-shadow color. Choose black for darg backgounds and lighter black rgba(0, 0, 0, 0.08) for light bckgrounds*/
+  --shadow-color: black;
 }
   
  /* ========================================
@@ -160,7 +163,7 @@ p {                               /* Styles for paragraph elements */
   scroll-snap-align: center;    /* Magnet snap to center */
   padding: 2em 1.5em;
   border-radius: 0;             /* ZANNA sharp edges */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 15px var(--shadow-color);
   border: 1px solid rgba(0, 0, 0, 0.05);
   text-align: center;
 }
@@ -415,6 +418,7 @@ p {                               /* Styles for paragraph elements */
 .testimonials h2 {
   margin-bottom: 1em;
   color: var(--font-color);
+  margin-top: 1em;
 }
 
 /* --- THE SLIDER TRACK (The Horizontal Axis) --- */
@@ -445,7 +449,7 @@ p {                               /* Styles for paragraph elements */
   scroll-snap-align: center; /* Ensures card snaps to middle of screen */
   padding: 2.5em 1.1em;      /* Relative padding that grows with text */
   border-radius: 0;          /* Sharp corners for the boutique look */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 15px var(--shadow-color);
   border: 1px solid rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
@@ -502,6 +506,7 @@ p {                               /* Styles for paragraph elements */
 .pricing h2 {
   margin-bottom: 0.5em;
   color: var(--font-color);
+  margin-top: 1em;
 }
 
 /* --- THE SLIDER TRACK --- */
@@ -526,7 +531,7 @@ p {                               /* Styles for paragraph elements */
   scroll-snap-align: center;
   padding: 2em 1.5em;
   border-radius: 0; 
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 15px var(--shadow-color);
   border: 1px solid rgba(0, 0, 0, 0.05);
   text-align: center;
   display: flex;
