@@ -304,7 +304,7 @@ p {                               /* Styles for paragraph elements */
   gap: 0.8em; /* Space between the green dot and the button */
   /*width: 8em;  Fixed width ensures all buttons line up vertically */
   flex-shrink: 0; /* Prevents the button area from being squeezed */
-  min-width: auto;
+  width: 9em;
   margin-left:1rem;
   width: auto;
 }
@@ -724,7 +724,7 @@ p {                               /* Styles for paragraph elements */
   filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.4));
 }
 
-.menu-button .bar {               /* Styles for the three bars inside hamburger button (DESCENDANT SELECTOR) */
+.menu-button .bar {
   width: 25px;                    /* Sets bar width to 25 pixels */
   height: 3px;                    /* Sets bar height to 3 pixels */
   background-color: var(--contrast) ;        /* Sets bar color to white */
