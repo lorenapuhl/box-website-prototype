@@ -408,7 +408,7 @@ p {                               /* Styles for paragraph elements */
 
 @media screen and (max-width: 400px) {
   .class-info h3 {
-    font-size: 1em;
+    font-size: 1.1em;
     text-align: left;
   }
 
@@ -808,18 +808,18 @@ p {                               /* Styles for paragraph elements */
 
 /* Tablet Styles (screens smaller than 900px) */
 @media screen and (max-width: 900px) {  /* Applies only when screen width is 900px or less */
-  h1 {
+  .h1 {
     font-size: 14vw;  /* Smaller title for tablets */  /* Reduces h1 size from 72px to 48px */
   }
   
-  nav ul {
+  .nav ul {
     gap: 15px;  /* Reduce space between nav items */  /* Reduces gap from 20px to 15px */
     padding: 15px;  /* Reduces padding from 20px to 15px */
     flex-wrap: wrap;  /* Allow nav items to wrap if needed */  /* Items move to next line if no space */
     justify-content: center;  /* Centers wrapped items */
   }
   
-  p {
+  .p {
     font-size: 16px;  /* Reduces paragraph font size */
     margin: 15px;  /* Reduces paragraph margin */
   }
@@ -827,31 +827,31 @@ p {                               /* Styles for paragraph elements */
 
 /* Mobile Styles (screens smaller than 600px) */
 @media screen and (max-width: 600px) {  /* Applies only when screen width is 600px or less */
-    h1 {
+    .h1 {
       font-size: 18vw;  /* Even smaller for mobile */  /* Further reduces h1 size to 36px */
       letter-spacing: 2px;  /* Reduce letter spacing */  /* Reduces space between letters */
       margin-top: 80px;  /* Adds margin above the h1 instead of padding */
     }
     
-    nav ul {
+    .nav ul {
       gap: 10px;  /* Further reduces gap to 10px */
       padding: 10px;  /* Further reduces padding to 10px */
       flex-direction: column;  /* Stack nav items vertically */  /* Changes from row to column layout */
       align-items: center;  /* Centers items vertically in column */
     }
     
-    nav a {
+    .nav a {
       display: block;  /* Make links full width for easier tapping */  /* Links take full width */
       padding: 8px 0;  /* Adds vertical padding for easier tapping */
       font-size: 16px;  /* Sets mobile link font size */
     }
     
-    p {
+    .p {
       font-size: 14px;  /* Further reduces paragraph font size */
       margin: 10px;  /* Further reduces paragraph margin */
     }
 
-    h2 {
+    .h2 {
     font-family: 'Bebas Neue', sans-serif;
     text-transform: uppercase;
     font-size: 2.5rem;
@@ -861,19 +861,23 @@ p {                               /* Styles for paragraph elements */
 
 /* Small Mobile Styles (screens smaller than 400px) */
 @media screen and (max-width: 400px) {  /* Applies only on very small screens */
-  h1 {
+  .h1 {
     font-size: 18vw;  /* Smallest size for very small phones */  /* Further reduces h1 to 28px */
   }
   
-  nav ul {
+  .nav ul {
     gap: 5px;  /* Minimum gap between nav items */
   }
 
-    h3 {
+  .h3 {
     font-size: 2em;  /* Smallest size for very small phones */  /* Further reduces h1 to 28px */
   }
 
-  pricing-card h3 {
+  .pricing-card h3 {
   font-size: 1.5em;
+  }
+
+  .cta-btn {
+    padding: 0.4em 0.5em;
   }
 }

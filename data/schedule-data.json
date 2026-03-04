@@ -17,11 +17,11 @@
   ],
   "Fri": [
     { "name": "Endurance Rounds", "bTime": "07:00", "eTime": "08:00", "instructor": "Camille Bernard", "status": "orange" },
-    { "name": "Friday Fight Night (Conditioning)", "bTime": "18:00", "eTime": "19:00", "instructor": "Luca Moretti", "status": "green" }
+    { "name": "Friday Fight Night", "bTime": "18:00", "eTime": "19:00", "instructor": "Luca Moretti", "status": "green" }
   ],
   "Sat": [
     { "name": "Open Mat & Pad Work", "bTime": "10:00", "eTime": "11:00", "instructor": "Clara Müller", "status": "red" },
-    { "name": "Defense & Head Movement Workshop", "bTime": "11:30", "eTime": "13:00", "instructor": "Elena Rossi", "status": "green" }
+    { "name": "Defense & Head Movement", "bTime": "11:30", "eTime": "13:00", "instructor": "Elena Rossi", "status": "green" }
   ],
   "Sun": [
     { "name": "Recovery & Stretching", "bTime": "09:30", "eTime": "10:30", "instructor": "Julien Lefebvre", "status": "green" },
