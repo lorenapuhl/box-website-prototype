@@ -57,7 +57,7 @@ body {
 h2 {
   font-family: 'Bebas Neue', sans-serif;
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 4rem;
   letter-spacing: 2px;
 }
 
@@ -411,7 +411,7 @@ p {                               /* Styles for paragraph elements */
 }
 /* Header 'Nuestra comunidad opina */
 .testimonials h2 {
-  margin-bottom: 2em;
+  /*margin-bottom: 2em;*/
   color: var(--font-color);
 }
 
@@ -810,30 +810,36 @@ p {                               /* Styles for paragraph elements */
 
 /* Mobile Styles (screens smaller than 600px) */
 @media screen and (max-width: 600px) {  /* Applies only when screen width is 600px or less */
-  h1 {
-    font-size: 10vw;  /* Even smaller for mobile */  /* Further reduces h1 size to 36px */
-    letter-spacing: 2px;  /* Reduce letter spacing */  /* Reduces space between letters */
-    margin-top: 80px;  /* Adds margin above the h1 instead of padding */
-  }
-  
-  nav ul {
-    gap: 10px;  /* Further reduces gap to 10px */
-    padding: 10px;  /* Further reduces padding to 10px */
-    flex-direction: column;  /* Stack nav items vertically */  /* Changes from row to column layout */
-    align-items: center;  /* Centers items vertically in column */
-  }
-  
-  nav a {
-    display: block;  /* Make links full width for easier tapping */  /* Links take full width */
-    padding: 8px 0;  /* Adds vertical padding for easier tapping */
-    font-size: 16px;  /* Sets mobile link font size */
-  }
-  
-  p {
-    font-size: 14px;  /* Further reduces paragraph font size */
-    margin: 10px;  /* Further reduces paragraph margin */
-  }
+    h1 {
+      font-size: 18vw;  /* Even smaller for mobile */  /* Further reduces h1 size to 36px */
+      letter-spacing: 2px;  /* Reduce letter spacing */  /* Reduces space between letters */
+      margin-top: 80px;  /* Adds margin above the h1 instead of padding */
+    }
+    
+    nav ul {
+      gap: 10px;  /* Further reduces gap to 10px */
+      padding: 10px;  /* Further reduces padding to 10px */
+      flex-direction: column;  /* Stack nav items vertically */  /* Changes from row to column layout */
+      align-items: center;  /* Centers items vertically in column */
+    }
+    
+    nav a {
+      display: block;  /* Make links full width for easier tapping */  /* Links take full width */
+      padding: 8px 0;  /* Adds vertical padding for easier tapping */
+      font-size: 16px;  /* Sets mobile link font size */
+    }
+    
+    p {
+      font-size: 14px;  /* Further reduces paragraph font size */
+      margin: 10px;  /* Further reduces paragraph margin */
+    }
 
+    h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+  }
 }
 
 /* Small Mobile Styles (screens smaller than 400px) */
