@@ -861,4 +861,9 @@ p {                               /* Styles for paragraph elements */
   .testimonials h2 {
   margin-bottom: 1em;
   }
+
+  .pricing-card .price {
+  font-size: 1.3em;
+  }
+
 }
