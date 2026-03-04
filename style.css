@@ -880,4 +880,8 @@ p {                               /* Styles for paragraph elements */
   .cta-btn {
     padding: 0.4em 0.5em;
   }
+
+  .pricing-card p {
+  font-size: 0.9em;
+  }
 }
