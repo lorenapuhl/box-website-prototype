@@ -259,6 +259,7 @@ p {                               /* Styles for paragraph elements */
   padding-right: 20px; /* Space between text and the dot/button area */
   min-width: 0; /*Allows text to truncate or wrap instead of pushing the button */
   padding: 0;
+  text-align: left;
 }
 
 /* Class-info container with class name, schedule and teacher*/
@@ -274,7 +275,6 @@ p {                               /* Styles for paragraph elements */
   font-size: clamp(0.75rem, 2vw, 0.85rem);  margin: 4px 0;              /* Tight spacing between the time line and instructor line */
   line-height: 1.4;
   margin: 0;
-  text-align: left;
 }
 
 
