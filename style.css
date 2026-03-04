@@ -264,7 +264,8 @@ p {                               /* Styles for paragraph elements */
 
 /* Class-info container with class name, schedule and teacher*/
 .class-info h3 {
-  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  font-size: 1.5vw;
+  /*font-size: clamp(0.9rem, 2.5vw, 1.1rem);*/
   margin: 0 0 5px 0;         /* Removes top margin, adds space below for the time */
   font-weight: 500;
   letter-spacing: 1.5px;
