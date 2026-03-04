@@ -853,4 +853,12 @@ p {                               /* Styles for paragraph elements */
   .btn-reserve {
   font-weight: 500;
   }
+
+    h2 {
+    font-size: 3rem;  /* Smallest size for very small phones */  /* Further reduces h1 to 28px */
+  }
+
+  .testimonials h2 {
+  margin-bottom: 1em;
+  }
 }
