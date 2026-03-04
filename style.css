@@ -350,6 +350,7 @@ p {                               /* Styles for paragraph elements */
   font-weight: bold;
   cursor: pointer;
   font-size: 0.85rem; /* Slightly smaller base font */
+  width: 6rem;
 }
 
 /* This targets ONLY buttons that have the 'disabled' attribute */
@@ -549,12 +550,12 @@ p {                               /* Styles for paragraph elements */
 
 .pricing-card h3 {
   color: var(--font-color);
-  font-size: 1.2 em;
+  font-size: 1.2em;
 }
 
 .pricing-card p {
   color: var(--font-color);
-  font-size: 1.2 em;
+  font-size: 1.2em;
   margin-bottom: 0.5em;
 }
 
@@ -866,4 +867,8 @@ p {                               /* Styles for paragraph elements */
   font-size: 1.3em;
   }
 
+  .btn-reserve {
+  padding: 0.6em 0;
+  width: 4rem;
+  }
 }
