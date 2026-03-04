@@ -860,4 +860,8 @@ p {                               /* Styles for paragraph elements */
   nav ul {
     gap: 5px;  /* Minimum gap between nav items */
   }
+
+    h3 {
+    font-size: 2.5em;  /* Smallest size for very small phones */  /* Further reduces h1 to 28px */
+  }
 }
