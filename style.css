@@ -253,6 +253,7 @@ p {                               /* Styles for paragraph elements */
   box-sizing: border-box;
   max-width: 700px;
   margin: 0 auto; /* Centers the restricted row within the section */
+  box-shadow: 0 4px 15px var(--shadow-color);
 }
 
 /* Class-info container with class name, schedule and teacher*/
@@ -279,6 +280,7 @@ p {                               /* Styles for paragraph elements */
   font-size: clamp(0.75rem, 2vw, 0.85rem);  margin: 4px 0;              /* Tight spacing between the time line and instructor line */
   line-height: 1.4;
   margin: 0;
+  text-align: left
 }
 
 
